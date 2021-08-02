@@ -9,3 +9,4 @@ class Pet {
 }
 const tomagotchi = new Pet("", 0, 0, 0, 0)
 console.log(tomagotchi)
+

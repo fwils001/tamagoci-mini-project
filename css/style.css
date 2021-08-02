@@ -1,0 +1,12 @@
+body {
+    background-color: yellow;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-top: 300px;
+    transition-duration: 2s;
+}
