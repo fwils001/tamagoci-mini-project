@@ -1,5 +1,8 @@
 body {
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 img {
@@ -7,6 +10,22 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 15%;
-    margin-top: 300px;
+    /* margin-top: 300px; */
 }
+
+h1 {
+    font-size: medium;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#buttonPanel {
+    display: flex;
+    margin: 100px;
+}
+
 
