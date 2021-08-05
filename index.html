@@ -7,12 +7,13 @@
 <body>
 <div id="top">
     <div>
-    <h1> Name your tomagotchi</h1>
-    <form  name = "myForm">
+    <h1>Name your tomagotchi</h1>
+    <h2 id = "tomagotchi-name"></h2>
+    <form>
         <input type="text" name = "name" id="tt" placeholder="Enter Name : ">
-    
+        <input type="submit" id="nameform">
     </form>   
-        <input type="submit"  onclick="display()">
+       
         <p id="demo"></p>
     </div>
 
@@ -26,29 +27,14 @@
 <div id="image">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfVpCKmeO5rC1eISqEoaarREsuxQLYQO8dSWxO-aKV4QCThNVGrkjQQ1pXfitw0-_P2wWQ24-DXcgFgw&usqp=CAU" alt="Tomagotchi">
 </div>
+    
     <div id="buttonPanel">
-        <button onclick="setTimeout(sayYumYum, 500)">Feed</button>
-        <button onclick="setTimeout(sayGoodNight, 500)">Turn off lights</button>
-        <button onclick="setTimeout(sayHeeHee, 500)">Play</button>
+        <button class="button" id="feed">Feed</button>
+        <button class="button" id="turn-off-lights">Turn off lights</button>
+        <button class="button" id="play">Play</button>
     </div>
-
-    <div id="start">
-    <button onclick="setTimeout(startGame, 500)">Start game!</button>
-   </div>
+   
 </body>
   
-  <script>
-    function startGame() {
-        alert('Hello there! Your pet is waiting for you...');
-    }
-    function sayYumYum() {
-        alert("Yum yum!")
-    }
-    function sayGoodNight() {
-        alert ("Good night!")
-    }
-    function sayHeeHee () {
-        alert("Hee hee!")
-    }
-</script>
+  
 </html>
