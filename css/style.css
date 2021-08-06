@@ -1,8 +1,8 @@
 body {
     background-color: yellow;
     display: flex;
-    flex-direction: column
-    
+    flex-direction: column;
+    background-image: url(https://imgur.com/jpGDS7G.jpg)   
 }
 
 img {
