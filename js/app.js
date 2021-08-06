@@ -60,7 +60,7 @@ relocate() {
 }
 
 transform(){
-    if(this.lifetime >= 150) {
+    if(this.age >=1) {
         const img = document.querySelector("#image")
         img.style.width="900px"
     }    
@@ -94,7 +94,7 @@ const game = {
             this.time++
             this.newPet.lifetime++
             this.reasonOfDeath = "";
-            const timeInMilliseconds = this.time * 1000
+            const timeInMilliseconds = this.time * 10000
 
 
             if (timeInMilliseconds % 2000 === 0) {
@@ -109,29 +109,29 @@ const game = {
             if (timeInMilliseconds %3000 === 0) {
                 this.newPet.getSleepy();
             }
-            if (timeInMilliseconds % 60000 === 0) {
+            if (timeInMilliseconds % 40000 === 0) {
                 this.newPet.getOlder();
                 this.newPet.transform();
                 this.time = 0;
             }
             if (this.newPet.hunger>=10) {
                 this.newPet.dead = true;
-                this.reasonOfDeath = "starved and withered into tomagotchi bones";
+                this.reasonOfDeath = "it starved and withered into tomagotchi bones";
             }
             if (this.newPet.sleepiness>=10){
                 this.newPet.dead = true;
-                this.reasonOfDeath = "pulled too many all-nighters so eyes fell out";     
+                this.reasonOfDeath = "it pulled too many all-nighters so eyes fell out";     
             }
             if (this.newPet.boredom>=10) {
                 this.newPet.dead = true;
-                this.reasonOfDeath = "skull shattered from restlessness";
+                this.reasonOfDeath = "its skull shattered from restlessness";
             }
             if (this.newPet.dead) {
-                alert("Pet has passed away")
+                alert("Pet has passed away because " + this.reasonOfDeath)
                 clearInterval(this.intervalID)
                 //this.newPet.graveyard(this.reasonOfDeath)
             }                      
-            }, 100) 
+            }, 1000) 
     },  
 
     feedTomagochi() {
@@ -174,7 +174,7 @@ document.querySelector('#tomagotchi-name').innerHTML = `${submitName}`
 let button1 = document.getElementById('feed')
     button1.addEventListener('click', (event) =>{
         let feedPet = document.getElementById('hunger').value;
-        //document.querySelector('#buttonPanel').innerHTML = `${feedPet}`
+       // document.querySelector('#buttonPanel').innerHTML = `${feedPet}`
         game.feedTomagochi()
 
     })

@@ -1,8 +1,7 @@
 body {
-    background-color: yellow;
     display: flex;
     flex-direction: column;
-    background-image: url(https://imgur.com/jpGDS7G.jpg)   
+    background-image: url(https://imgur.com/6ZIc27T.jpg);
 }
 
 img {
@@ -10,18 +9,17 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 15%;
-    margin-top: 120px; 
+    margin-top: 120px
 }
 
 h1 {
     font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #top {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-between
 }
 
 #buttonPanel {
@@ -30,7 +28,7 @@ h1 {
     flex-direction: row;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 #image {
@@ -39,9 +37,9 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
-    margin-top: 5px;
-
+    margin-top: 5px
 }
+
 @keyframes floating {
     0% { transform: translate(0 ,0px); }
     50% { transform: translate(0, 15px); }
